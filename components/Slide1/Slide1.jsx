@@ -1,0 +1,22 @@
+import React from "react";
+import Card from "@material-ui/core/Card";
+export default class Slide1 extends React.Component{
+    constructor(props){
+        super(props);
+
+    }
+    componentDidUpdate(prevProps, prevState, snapshot){
+        if(!this.props.isIn){
+            this.props.unmount();
+        }
+    }
+    componentWillUnmount(){
+      
+    }
+    render(){
+       
+        return (
+        
+        <Card><div> slide 1</div></Card>);
+    }
+}
